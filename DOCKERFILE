@@ -12,6 +12,8 @@ COPY . .
 
 # Build the project
 RUN npm run build
+RUN npm run build:ssr
+RUN npm run dev
 
 # Stage 2: Production
 FROM nginx:alpine
