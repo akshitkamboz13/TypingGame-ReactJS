@@ -1,6 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import lines from "./data/lines.json";
-import { set } from "mongoose";
 
 const App = () => {
   const [text, setText] = useState("");
