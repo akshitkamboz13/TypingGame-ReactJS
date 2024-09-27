@@ -3,8 +3,10 @@ FROM node:18 AS build
 
 WORKDIR /app
 
-# Copy package.json and install dependencies
+# Copy package.json and package-lock.json
 COPY package.json package-lock.json ./
+
+# Install dependencies
 RUN npm ci
 
 # Copy the rest of the application
@@ -12,8 +14,6 @@ COPY . .
 
 # Build the project
 RUN npm run build
-RUN npm run build:ssr
-RUN npm run dev
 
 # Stage 2: Production
 FROM nginx:alpine
@@ -26,3 +26,4 @@ EXPOSE 80
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
+
