@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import lines from "./data/lines.json";
 import bgimg from "./assets/bg.jpg";
-import './App.css';  // For custom styles
+import './App.css';  
 
 const App = () => {
   const [text, setText] = useState("");

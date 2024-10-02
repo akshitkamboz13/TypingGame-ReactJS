@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/TypingGame-ReactJS/',
 
+
   // Configure build options
   build: {
     outDir: 'dist', // default build directory for Vite
