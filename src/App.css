@@ -1,0 +1,37 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .correct-char {
+    color: #38a169;
+    font-weight: bold;
+  }
+  
+  .wrong-char {
+    color: #e53e3e;
+    font-weight: bold;
+  }
+  
+  .current-char {
+    background-color: #f6e05e;
+    border-radius: 4px;
+  }
+  
+  .stats-container {
+    color: #2d3748;
+    font-size: 1.25rem;
+  }
+  
+  .try-again-btn {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .typing-area {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
